@@ -1,7 +1,7 @@
 package com.prac.jpa.data.entity;
 
-import jakarta.persistence.*;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
