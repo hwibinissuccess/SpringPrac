@@ -1,11 +1,20 @@
 package com.prac.jpa.data.entity;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "product")
 public class Product {
 
@@ -26,63 +35,5 @@ public class Product {
 
     private LocalDateTime updatedAt;
 
-    public Long getNumber() {
-        return number;
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public Integer getPrice() {
-        return price;
-    }
-
-    public Integer getStock() {
-        return stock;
-    }
-
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setNumber(Long number) {
-        this.number = number;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(Integer price) {
-        this.price = price;
-    }
-
-    public void setStock(Integer stock) {
-        this.stock = stock;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public void setUpdatedAt(LocalDateTime updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "number=" + number +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", stock=" + stock +
-                ", createdAt=" + createdAt +
-                ", updatedAt=" + updatedAt +
-                '}';
-    }
 }
