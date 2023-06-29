@@ -60,12 +60,12 @@ public class ProducerRepositoryTest {
     @Transactional
     void relationshipTest2(){
 
-        Product product1 = saveProduct("동글펜",300,4000);
+        Product product1 = saveProduct("동글펜",400,4000);
         Product product2 = saveProduct("네모공책",100,5000);
         Product product3 = saveProduct("지우개",525,1234);
 
         Producer producer1 = saveProducer("flature");
-        Producer producer2 = saveProducer("wikibooks");
+        Producer producer2 = saveProducer("wikibookss");
 
         producer1.addProduct(product1);
         producer1.addProduct(product2);
